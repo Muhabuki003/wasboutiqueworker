@@ -84,7 +84,7 @@ async function sq(env, path, options = {}) {
    Cached in the CF Cache API for CATALOG_CACHE_TTL seconds.
 ───────────────────────────────────────────────────────────── */
 
-async function handleCatalog(request, env, cors) {
+async function handleCatalog(request, env, cors, ctx) {
   const cache = caches.default;
   const cacheKey = new Request(request.url + '?v=catalog', { method: 'GET' });
   const ttl = parseInt(env.CATALOG_CACHE_TTL || '300', 10);
@@ -262,7 +262,7 @@ async function handleCheckout(request, env, cors) {
     checkout_options: {
       redirect_url:               redirectUrl + '?order=success',
       ask_for_shipping_address:   true,
-      merchant_support_email:     'hello@wasboutique.com',
+      merchant_support_email:     'amburnett55@yahoo.com',
       enable_coupon:              false,
       enable_loyalty:             false,
     },

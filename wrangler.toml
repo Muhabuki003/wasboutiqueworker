@@ -1,0 +1,9 @@
+name = "wasboutiqueworker"
+main = "index.js"
+compatibility_date = "2024-11-20"
+
+[vars]
+SQUARE_LOCATION_ID = "39W8YZBSN93ZN"
+ALLOWED_ORIGIN = "https://wasboutique-shop.pages.dev"
+SITE_URL = "https://wasboutique-shop.pages.dev"
+CATALOG_CACHE_TTL = "300"
