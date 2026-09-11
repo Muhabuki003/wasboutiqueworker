@@ -7,3 +7,13 @@ SQUARE_LOCATION_ID = "39W8YZBSN93ZN"
 ALLOWED_ORIGIN = "https://wasboutique-shop.pages.dev"
 SITE_URL = "https://wasboutique-shop.pages.dev"
 CATALOG_CACHE_TTL = "300"
+
+# ── Shipping / tax (see index.js header for semantics) ─────────
+# SHIPPING_FREE_OVER_CENTS: free US shipping at/above this subtotal (0 disables)
+SHIPPING_FLAT_CENTS = "695"
+SHIPPING_FREE_OVER_CENTS = "7500"
+SHIPPING_INTL_FLAT_CENTS = "1995"
+# TAX_RATES: JSON map of 2-letter state -> percent. Empty = no tax collected
+# until the client confirms her registration states — do not invent a rate.
+TAX_RATES = "{}"
+TAX_SHIPPING = "false"
