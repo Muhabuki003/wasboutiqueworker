@@ -13,7 +13,10 @@ CATALOG_CACHE_TTL = "300"
 SHIPPING_FLAT_CENTS = "695"
 SHIPPING_FREE_OVER_CENTS = "7500"
 SHIPPING_INTL_FLAT_CENTS = "1995"
-# TAX_RATES: JSON map of 2-letter state -> percent. Empty = no tax collected
-# until the client confirms her registration states — do not invent a rate.
-TAX_RATES = "{}"
-TAX_SHIPPING = "false"
+# TAX_RATES: JSON map of 2-letter state -> percent.
+# TEXAS ENABLED 2026-09-20: client (Angela, WAS Boutique) is a Houston TX business
+# with physical presence in Texas, so TX sales tax is collected. Every other state
+# stays $0 until she confirms more registrations — do not invent rates.
+TAX_RATES = "{\"TX\": 8.25}"
+# TAX_SHIPPING: Texas treats delivery charges as part of the taxable sales price.
+TAX_SHIPPING = "true"
